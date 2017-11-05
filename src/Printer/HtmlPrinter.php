@@ -2,6 +2,8 @@
 
 namespace Potherca\CrossReference\HelloWorld\Printer;
 
+use Potherca\CrossReference\HelloWorld\Model\Language;
+
 class HtmlPrinter extends AbstractPrinter
 {
     final public function output()
@@ -10,16 +12,19 @@ class HtmlPrinter extends AbstractPrinter
 
         $languages = $this->getLanguages();
 
-        $availableSources = array_reduce($languages, function ($carry, $item) {
-            return array_unique(array_merge($carry, $item));
-        }, $initial = []);
+        $providers = [];
+        array_walk($languages, function (Language $language) use (&$providers) {
+            $providers = array_unique(array_merge($providers, $language->getProviders()));
+        });
+
+        sort($providers);
 
         $rows= '';
-        array_walk($languages, function ($sources, $language) use (&$rows, $availableSources) {
+        array_walk($languages, function ($language) use (&$rows, $providers) {
             $cells = '';
-            foreach($availableSources as $availableSource) {
 
-                $present = in_array($availableSource, $sources);
+            foreach($providers as $provider) {
+                $present = in_array($provider, $language->getProviders());
 
                 $cells .= vsprintf('<td class="%s">%s</td>', [
                     $present?'got-language':'not-language',
@@ -27,10 +32,63 @@ class HtmlPrinter extends AbstractPrinter
                 ]);
             }
 
-            $rows .= vsprintf('<tr><th>%s</th>%s</tr>%s', [$language, $cells, PHP_EOL]);
+            $nameList = $language->getNames();
+
+            $names = [];
+            array_walk($nameList, function ($name, $provider) use (&$names) {
+                $names[$name][] = $provider;
+            });
+
+            array_walk($names, function (&$providers, $name) {
+                $providers = vsprintf('<a title="%s">%s</a>', [implode("\n", $providers), $name]);
+            });
+
+            $name = implode(' / ', $names);
+
+            $rows .= vsprintf('<tr><th>%s</th>%s</tr>%s', [$name, $cells, PHP_EOL]);
         });
 
-$html = <<<'HTML'
+
+
+        $table = <<<'HTML'
+                <table class="column table is-bordered is-striped is-narrow is-hoverable">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div>
+                                    <span>Language</span>
+<!--
+                                    <div class="field has-addons" style="
+                                        padding: 0.25em 0em 0em 0;
+                                    ">
+                                        <div class="control has-icons-left">
+                                            <input class="input" type="text" placeholder="Programming language">
+
+                                            <span class="icon is-small is-left">
+                                                <i class="fa fa-filter"></i>
+                                            </span>
+                                        </div>
+                                        <div class="control">
+                                            <a class="button is-info">Filter</a>
+                                        </div>
+                                    </div>
+-->
+                                </div>
+                            </th>
+                            <td><div><span>%s</span></div></td>
+                        </tr>
+                    </thead>
+                    <tbody>%s</tbody>
+                </table>
+HTML;
+
+        $table = vsprintf($table, [
+            implode('</span></div></td><td><div><span>', $providers),
+            $rows
+        ]);
+
+
+$html = <<<HTML
 <html>
     <meta charset="utf-8">
 
@@ -75,14 +133,14 @@ $html = <<<'HTML'
                 transparent 0,
                 transparent 4.8rem,
                 white 0,
-                white 100%%
+                white 100%
             );
             border-top: none;
             height: 1em;
         }
 
         thead td > div {
-            transform: translate(0rem, 4rem) rotate(-40deg);
+            transform: translate(0rem, 1rem) rotate(-40deg);
             width: 1.5rem;
         }
 
@@ -100,16 +158,16 @@ $html = <<<'HTML'
             background-image: repeating-linear-gradient(
                 180deg,
                 #209CEE 0,
-                #209CEE 5rem,
+                #209CEE 2rem,
                 white 0,
-                white 100%%
+                white 100%
             );
             content: " ";
-            height: 100%%;
+            height: 100%;
             left: 0;
             position: absolute;
             top: 0;
-            width: 300%%;
+            width: 300%;
         }
 
         thead th, thead td {
@@ -133,7 +191,7 @@ $html = <<<'HTML'
             display: block;
             font-weight: bold;
             line-height: 2rem;
-            width: 100%%;
+            width: 100%;
         }
     </style>
 
@@ -153,7 +211,7 @@ $html = <<<'HTML'
                     <h2 class="title is-pulled-left has-text-info">What?</h2>
                     <p class="has-text-justified box">
                         This page contains a list of all the languages provided
-                        by %s separate "hello world" repositories. It overs an
+                        by separate "hello world" repositories. It offers an
                         overview (or cross-reference) of which languages are
                         available in which repository.
                     </p>
@@ -175,76 +233,18 @@ $html = <<<'HTML'
                     </p>
 -->
                 </div>
-                <table class="column table is-bordered is-striped is-narrow is-hoverable">
-                    <thead>
-                        <tr>
-                            <th>
-                                <div>
-                                    <span>Language</span>
-                                    <div class="field has-addons" style="
-                                        padding: 0.25em 0em 0em 0;
-                                    ">
-                                        <div class="control has-icons-left">
-                                            <input class="input" type="text" placeholder="Programming language">
-
-                                            <span class="icon is-small is-left">
-                                                <i class="fa fa-filter"></i>
-                                            </span>
-                                        </div>
-                                        <div class="control">
-                                            <a class="button is-info">Filter</a>
-                                            </div>
-                                    </div>
-                                </div>
-                            </th>
-                            <td><div><span>%s</span></div></td>
-                        </tr>
-                    </thead>
-                    <tbody>%s</tbody>
-                </table>
+                {$table}
             </div>
         </div>
 
-    <div class="hero-foot">
-    </div>
+        <div class="hero-foot">
+        </div>
 
     </section>
-    <script>
-        var input = document.querySelector('input'),
-            lis = [].slice.call(document.querySelectorAll('table tbody th')),
-            liText,
-            hasText,
-            len
-        ;
-console.log(lis);
-
-        input.onkeyup = function () {
-            var value = input.value.toUpperCase(),
-                i = 0
-            ;
-
-            console.log(value);
-            for (i=lis.length;i--;) {
-/*/          for (len = lis.length; i < len; i++) { /*/
-                liText = lis[i].innerText.toUpperCase();
-
-                hasText = liText.substr(0, value.length) == value;
-
-                lis[i].style.display = hasText
-                    ? 'list-item'
-                    : 'none'
-                ;
-
-        }
-
-    </script>
 </html>
 HTML;
-        $output = vsprintf($html, [
-            count($availableSources),
-            implode('</span></div></td><td><div><span>', $availableSources),
-            $rows
-        ]);
+
+        $output .= $html;
 
         return $output;
     }

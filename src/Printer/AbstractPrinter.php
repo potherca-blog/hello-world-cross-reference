@@ -2,20 +2,24 @@
 
 namespace Potherca\CrossReference\HelloWorld\Printer;
 
+use Potherca\CrossReference\HelloWorld\Model\Language;
+
 abstract class AbstractPrinter
 {
-    /** @var array */
+    /** @var Language[] */
     private $languages;
 
+    /** @return Language[] */
     final public function getLanguages()
     {
         return $this->languages;
     }
 
+    /**
+     * @param Language[] $languages
+     */
     final public function __construct(array $languages)
     {
-        ksort($languages);
-
         $this->languages = $languages;
     }
 

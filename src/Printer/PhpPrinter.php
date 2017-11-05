@@ -6,6 +6,6 @@ class PhpPrinter extends AbstractPrinter
 {
     final public function output()
     {
-        return vsprintf('<?php return %s;', [var_export($this->getLanguages(), true)]);
+        return vsprintf('<?php return %s;', [serialize($this->getLanguages())]);
     }
 }
