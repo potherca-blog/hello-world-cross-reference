@@ -226,12 +226,14 @@ $html = <<<HTML
                     <p class="has-text-justified box">
                         <a href="https://pother.ca/" class="created-by"><span class="potherca">Potherca</span></a>
                     </p>
-<!--
+
                     <h2 class="title is-pulled-left has-text-info">How?</h2>
                     <p class="has-text-justified box">
-                        Visit the source code for details.
+                        Visit <a href="https://github.com/potherca-blog/hello-world-cross-reference"
+                            class="has-text-info has-text-weight-semibold"
+                        >the source code</a> for details.
                     </p>
--->
+
                 </div>
                 {$table}
             </div>
