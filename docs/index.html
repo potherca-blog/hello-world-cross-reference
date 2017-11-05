@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" integrity="sha256-HEtF7HLJZSC3Le1HcsWbz1hDYFPZCqDhZa9QsCgVUdw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pother.ca/CssBase/css/created-by-potherca.css" integrity="sha384-ym76993Fm3XsoIrV759tLiuGRkmdFDc5PmfKo/3h5/xpoAt5S6NbvItSoWTvikLJ" crossorigin="anonymous">
+
+    <style>
+        section {
+            padding: 3rem;
+        }
+
+        .table {
+            background: none;
+            margin: 0 4em;
+        }
+
+        tbody tr {
+            background: white;
+        }
+
+        tbody td {
+            text-align: center;
+        }
+
+        .table thead th {
+            font-size: 2rem;
+            margin:0 !important;
+            padding:0 !important;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        thead th > div {
+            background: white;
+            padding: 0.5rem;
+        }
+
+        thead td {
+            background-image: repeating-linear-gradient(
+                180deg,
+                transparent 0,
+                transparent 4.8rem,
+                white 0,
+                white 100%
+            );
+            border-top: none;
+            height: 1em;
+        }
+
+        thead td > div {
+            transform: translate(0rem, 1rem) rotate(-40deg);
+            width: 1.5rem;
+        }
+
+        thead td > div > span {
+            background: white;
+            border-bottom: 1px solid lightgray;
+            border-top: 1px solid lightgray;
+            display: block;
+            line-height: 1.65rem;
+            white-space: nowrap;
+            width: 20rem;
+        }
+
+        thead td:first-of-type::before {
+            background-image: repeating-linear-gradient(
+                180deg,
+                #209CEE 0,
+                #209CEE 2rem,
+                white 0,
+                white 100%
+            );
+            content: " ";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 300%;
+        }
+
+        thead th, thead td {
+            position: sticky;
+            top: 0;
+        }
+
+        h2.title {
+            clear: both;
+            line-height: 0;
+            margin: 2rem;
+            white-space: nowrap;
+        }
+
+        .created-by:hover .potherca::after,
+        .created-by:hover .Potherca::after  {
+            -webkit-transform: rotatex(0deg) translate(0, -8px);
+            transform: rotatex(0deg) translate(0, -8px);
+        }
+        .created-by {
+            display: block;
+            font-weight: bold;
+            line-height: 2rem;
+            width: 100%;
+        }
+    </style>
+
+    <section class="hero is-info is-medium">
+        <div class="hero-head">
+            <h1 class="title">
+                Hello World!
+            </h1>
+            <h2 class="subtitle">
+                A cross-reference of "hello world" collections.
+            </h2>
+        </div>
+
+        <div class="hero-body">
+            <div class="columns container has-text-centered">
+                <div class="column">
+                    <h2 class="title is-pulled-left has-text-info">What?</h2>
+                    <p class="has-text-justified box">
+                        This page contains a list of all the languages provided
+                        by separate "hello world" repositories. It offers an
+                        overview (or cross-reference) of which languages are
+                        available in which repository.
+                    </p>
+
+                    <h2 class="title is-pulled-left has-text-info">Why?</h2>
+                    <p class="has-text-justified box">
+                        I came accross these "hello world" collections and I was
+                        curious what the score was.
+                    </p>
+
+                    <h2 class="title is-pulled-left has-text-info">Who?</h2>
+                    <p class="has-text-justified box">
+                        <a href="https://pother.ca/" class="created-by"><span class="potherca">Potherca</span></a>
+                    </p>
+
+                    <h2 class="title is-pulled-left has-text-info">How?</h2>
+                    <p class="has-text-justified box">
+                        Visit <a href="https://github.com/potherca-blog/hello-world-cross-reference"
+                            class="has-text-info has-text-weight-semibold"
+                        >the source code</a> for details.
+                    </p>
+
+                </div>
+                                <table class="column table is-bordered is-striped is-narrow is-hoverable">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div>
+                                    <span>Language</span>
+<!--
+                                    <div class="field has-addons" style="
+                                        padding: 0.25em 0em 0em 0;
+                                    ">
+                                        <div class="control has-icons-left">
+                                            <input class="input" type="text" placeholder="Programming language">
+
+                                            <span class="icon is-small is-left">
+                                                <i class="fa fa-filter"></i>
+                                            </span>
+                                        </div>
+                                        <div class="control">
+                                            <a class="button is-info">Filter</a>
+                                        </div>
+                                    </div>
+-->
+                                </div>
+                            </th>
+                            <td><div><span>helloworldcollection/helloworldcollection.github.io</span></div></td><td><div><span>knightking100/hello-worlds</span></div></td><td><div><span>leachim6/hello-world</span></div></td>
+                        </tr>
+                    </thead>
+                    <tbody><tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">0815</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">1+</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">1C-Enterprise</a> / <a title="leachim6/hello-world">1C Enterprise</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">2B</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">4Gl</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">4Test</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">4Thdimension</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">7Basic</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">8th</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">A:;</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">A+</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">ABAP</a> / <a title="leachim6/hello-world">Abap</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ABAP4</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">ABC</a> / <a title="leachim6/hello-world">Abc</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Acidic</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">ACL2</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Acpi</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ACPI Source Language</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Acronym</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ACS</a> / <a title="leachim6/hello-world">Acs</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Action!</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">ActionScript</a> / <a title="leachim6/hello-world">Actionscript</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Actionscript2</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Actionscript3</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ActionScript 3.0</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Actionscript (Flash 5)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ActionScript (Flash 8)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Actionscript (Flash MX)</a> / <a title="leachim6/hello-world">Actionscript Flashmx</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Ada</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ADVPL</a> / <a title="leachim6/hello-world">Advpl</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Aeolbonn</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Agda</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Agena</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">aheui</a> / <a title="knightking100/hello-worlds
+leachim6/hello-world">Aheui</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Aime</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Aiml</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Alaguf</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Alda</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Algae</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Algol-60</a> / <a title="leachim6/hello-world">Algol60</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Algol-68</a> / <a title="leachim6/hello-world">Algol68</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Algol W</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Alore</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Alpha-Five-Xbasic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Amazon States Language</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">amharic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Amiga-E</a> / <a title="knightking100/hello-worlds">AmigaE</a> / <a title="leachim6/hello-world">Amiga E</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">AMOS</a> / <a title="leachim6/hello-world">Amos</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Andl</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Android</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">AngelScript</a> / <a title="leachim6/hello-world">Angelscript</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Anguish</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Angular</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Ante</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">AntLang</a> / <a title="leachim6/hello-world">Antlang</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">APC</a> / <a title="leachim6/hello-world">Apc</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">A Pear Tree</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">APL</a> / <a title="leachim6/hello-world">Apl</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">AppleScript</a> / <a title="leachim6/hello-world">Applescript</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Arduino</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Arena</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Arendelle</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Argh!</a> / <a title="leachim6/hello-world">Argh</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">ArnoldC</a> / <a title="leachim6/hello-world">Arnoldc</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">AsciiDots</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Ash</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Asp</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ASP (C♯)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ASP (JavaScript)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ASP.NET</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ASP (VBE)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ASP (VBS)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler 6502</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (6502, Apple II)</a> / <a title="leachim6/hello-world">Assembler 6502Appleii</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (6502, C64)</a> / <a title="leachim6/hello-world">Assembler 6502C64</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (68000, Amiga)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (68000, Atari ST)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (68008)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler 6809Vectrex</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler 8048 Videopac</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (8051)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Arm</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (ARM, Android)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (ARM, RISC OS)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Atari2600</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Dcpu16</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (DG-Nova)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Fasm Dos</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">AssemblerFuck</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (HLA)</a> / <a title="leachim6/hello-world">Assembler Hla</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Ibm360</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (IBM 370)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (Intel)</a> / <a title="leachim6/hello-world">Assembler Intel</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (Itanium)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Lc 3</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler M68000 Amigaos</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Masm Dos</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Masm Win32</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Masm Win64</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (MIPS)</a> / <a title="leachim6/hello-world">Assembler Mips</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (MMIX)</a> / <a title="leachim6/hello-world">Assembler Mmix</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Nasm Freebsd</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Nasm Linux</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Nasm Linux64</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (PA-RISC)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (PDP-11)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (PDP-8)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (PPC, Darwin)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (SPARC)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Tasm Dos</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Tms9900 Ti99 4A</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Vax Ultrix</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (VP)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (Win32)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (X1)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (X8)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (z390)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (Z80 Console)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (Z80, CP/M)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Z80 Knightos</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Z80 Ti83Calculator</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Assembler Z80 Zxspectrum</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Assembler (ZX81)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Asterisk</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Atom (Feeds)</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">ATS</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">AutoHotkey</a> / <a title="leachim6/hello-world">Autohotkey</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">AutoIt</a> / <a title="leachim6/hello-world">Autoit</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">AutoIT3</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">AutoLISP</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Automator</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">AviSynth</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">AWK</a> / <a title="leachim6/hello-world">Awk</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">B</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Babel</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">BAL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Bash</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">BASIC</a> / <a title="leachim6/hello-world">Basic</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">BASIC256</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">BASIC-PICAXE</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">!!!Batch</a> / <a title="leachim6/hello-world">Batch</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Batsh</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Battlestar</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">bc</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">BCPL</a> / <a title="leachim6/hello-world">Bcpl</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">BeanShell</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Beatnik</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">beeswax</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Befreak</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Befunge</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Bennugd</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">BestFriends.js</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Beta</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">BibTex</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Binaryfuck</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">BIT</a> / <a title="leachim6/hello-world">Bit</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Bitbitjump</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Blackrum</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Blc</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Blender</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Blitz3D</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">BlitzMax</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">BlitzPlus</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Blub</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">BMC Remedy</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Boo</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Boolfuck</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Brain</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Brainf Ck</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Brainf Ck 2D</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Brainfuck</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Brainfuck--</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Brainloller</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">BrightScript</a> / <a title="knightking100/hello-worlds">Brightscript</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Broccoli</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Brzrk</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">BS2000</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">BSP</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">BuddyScript</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Burlesque</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Buzz</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Byter</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Byte Syze</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">C</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C♯</a> / <a title="knightking100/hello-worlds">C#</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C*</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">C+</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">C++</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">C++/CLI</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C++ (Epoc)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C++ (FLTK)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C++ (Gtk++)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C++ (ISO)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C++ (MFC)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C++ (.NET CLI)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C++ (Qt)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Caché Object Script</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">CA-Easytrieve Plus</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C/AL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">CalScript</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C (Amiga Anywhere)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Caml</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">CAML-Light</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C (ANSI)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Cardinal</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Carp</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Casio BASIC</a> / <a title="leachim6/hello-world">Casio Basic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Cat</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C (Curses)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">CDuce</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Centura</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Ceylon</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C (GEM)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Cgi</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ChaiScript</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Chapel</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">ChaScript</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Cheddar</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Chef</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Chicken</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">ChucK</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">ChuckScript</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">CICS-COBOL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Cil</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C (Intuition)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C (K&R)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Clarion</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Clean</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Clipper</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">CLIPS</a> / <a title="leachim6/hello-world">Clips</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Clisp</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Clojure</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">CLP</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">CMake</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">COBOL</a> / <a title="leachim6/hello-world">Cobol</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Cobra</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Cocoa</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Coconut</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">CoDScript</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">CoffeeScript</a> / <a title="leachim6/hello-world">Coffeescript</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">ColdFusion</a> / <a title="leachim6/hello-world">Coldfusion</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">CommandScript</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Common Lisp</a> / <a title="knightking100/hello-worlds
+leachim6/hello-world">Common Lisp</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Console Postscript</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Continuesequation</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Cool</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">CoolBasic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C (OpenGL)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Cor</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">cpl</a> / <a title="knightking100/hello-worlds">CPL</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C (PresentationManager)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Crystal</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Csh</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Csharp</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">CSS</a> / <a title="leachim6/hello-world">Css</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">CUDA</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">CWEB</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C (Windows)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">C (X11 Athena)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">CYBOL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Cypherneo4J</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">D</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">D4</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Dafny</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Dao</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Dark</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Darkbasic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Dart</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Databasic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Dataflex</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Db2</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">dBase</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">dc</a> / <a title="leachim6/hello-world">Dc</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">DCL</a> / <a title="leachim6/hello-world">Dcl</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Dd Dd</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Deadfish</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Decimal</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Delphi</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Derpcode</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Derplang</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Desired State Configuration</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Dialect</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Dimensions</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Dis</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Divzeros</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">DL</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">DM</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">DML</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">DNA#</a> / <a title="leachim6/hello-world">Dna#</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Dna Sharp</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Dogescript</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Dogo</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Dos</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Draco</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Drift</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Drive In Window</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Dtrace</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Ducky Script</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">DUP</a> / <a title="leachim6/hello-world">Dup</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">DWIM</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Dylan</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">DynaMorph</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Dyvil</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">E</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">easm</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Ebuild</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">ECMAScript</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Ecstatic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Efene</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Eiffel</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Elan</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">ELANG</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ELENA</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Elixir</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Elliott</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Elm</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Emacs Lisp</a> / <a title="leachim6/hello-world">Emacslisp</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Emmental</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Emojicode</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Emoticon</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">~English</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Eoool</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Erlang</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Erlang Hw</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ERRE</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Eta</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Euphoria</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Eve</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Ezhil</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">F</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">F#</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Factor</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Falcon</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">FALSE</a> / <a title="leachim6/hello-world">False</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Fancy</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Fantom</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Felix</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Ferite</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Fetlang</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Filemaker</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Fish</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Fish Shell</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Fjoelnir</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Fjölnir</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Flaming Thunder</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Fob</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Focal</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">FOCUS</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Fog.Fog</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Folders</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Foo</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Forobj</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Forth</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Fortob</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Fortran</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Fortran77</a> / <a title="knightking100/hello-worlds">Fortran 77</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Fortran90</a> / <a title="knightking100/hello-worlds">Fortran 90</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">FortranIV</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Fortress</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Fourier</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">FreeBASIC</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Frink</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Fsharp</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Full Metal Jacket</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Gambas</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">GameMonkey Script</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Gammaplex</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Gasoil</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">G-code</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">GDScript</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Gecho</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Genome</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Gentee</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Gentee-simple</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Gentzen</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Geojson</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Gibberish</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Glass</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Glava</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">GLBasic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">GML</a> / <a title="leachim6/hello-world">Gml</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">GNU Octave</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Go</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Gofer</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Golfscript</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Golo</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Googleappscript</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Google AppsScript</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">GoogleGadgets</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Gosu</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">GOTO 10</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">GPortugol</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">GRAMophone</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Green Marl</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Gri</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Gridscript</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Grin</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Groovy</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">GTA3Script</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Guile</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">GW-BASIC</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">GynkoSoft</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Hack</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Harbour</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Haskell</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Have</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Haxe</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">HDX</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Hello</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Hello++</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Hello Html</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Hello World</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Heron</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">HEX</a> / <a title="leachim6/hello-world">Hex</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Hexish</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Higher Subleq</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Hodor</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Hollow</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">HolyC</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Homespring</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Hoon</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Hop</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">HP-41C</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">HP-48</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">HPPPL</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">HQ9+</a> / <a title="leachim6/hello-world">Hq9+</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">HTML</a> / <a title="leachim6/hello-world">Html</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Hubot</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Human</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Hy</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">HyperTalk</a> / <a title="leachim6/hello-world">Hypertalk</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Ibm1401</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">IBM-Exec</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">IBM-Exec2</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Icedcoffeescript</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ici</a> / <a title="leachim6/hello-world">Ici</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ICL SCL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Icon</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Icon / Unicon</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">IDC</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">IDL</a> / <a title="leachim6/hello-world">Idl</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Idris</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Il</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">ImageFuck</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Imba</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Incal</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Indec</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Inform</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Informix 4GL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Ingres ABF</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Ink</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">InstallScript</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Intercal</a> / <a title="knightking100/hello-worlds">INTERCAL</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Io</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Ioke</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Ionic</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Iptscrae</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Irc</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Iscom</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Islisp</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">J</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Jack</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Jade</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Jai</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Jako</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Jasmin</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Jason</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Java</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Java (Mobile)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">JavaScript</a> / <a title="leachim6/hello-world">Javascript</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Java Server Pages</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Java (Servlet)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Java (Swing)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">JCL</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Jeem (لغة ج)</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Jenkinsfile</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Jess</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Jorf</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">jq</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Jsf*Ck</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">JSFuck</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Json</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Jsoniq</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Jsx</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">JudoScript</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Julia</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">K</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">K3</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">K4</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">K5</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">KanjiCode</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Karel</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">KimL</a> / <a title="leachim6/hello-world">Kiml</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Kipple</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Kitten</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Kix</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">KonsolScript</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Kotlin</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Ksh</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Kylix</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">L</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">L33t</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">LabVIEW</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Labyrinth</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Lasso</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">LaTeX</a> / <a title="leachim6/hello-world">Latex</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Latino</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Lazyk</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Leszek</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">LibertyBASIC</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Like, Python</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Lily</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">LilyPond</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Limbo</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">LIMS Basic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Lingo</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Linotte</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Lisaac</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Lisp</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Lisp-Emacs</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">LiveCode</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Livescript</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">LLVM</a> / <a title="leachim6/hello-world">Llvm</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Lnusp</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Logical</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Logo</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Logo (graphical)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Logtalk</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Lola</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">LOLCODE</a> / <a title="leachim6/hello-world">Lolcode</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Lolpython</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">LOTOS</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Lotus Note Formula</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Lotus Script</a> / <a title="knightking100/hello-worlds">LotusScript</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">LÖVE</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">LPC</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">LS-DYNA</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">LSL</a> / <a title="leachim6/hello-world">Lsl</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Lua</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">m4</a> / <a title="knightking100/hello-worlds
+leachim6/hello-world">M4</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MACRO-10</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MACRO-11</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Macromedia-Flex</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Macsyma</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MAD</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Magic</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">make</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Malbolge</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MAMASH</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Manufactoria</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Maple</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Markdown</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Mathematica</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Mathematica Online</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Mathematica / Wolfram Language</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">MATLAB</a> / <a title="leachim6/hello-world">Matlab</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Matrix</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Maxima</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MAX-MSP</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MAXScript</a> / <a title="leachim6/hello-world">Maxscript</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MCSBL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MDM Zinc</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MEL</a> / <a title="leachim6/hello-world">Mel</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Meq</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Mercury</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Metafont</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MetaPost</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MEX</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Microtik</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Mirc</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">mIRC-Alias</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">mIRC-Commandline</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">mIRC-Script</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">mIRC Scripting Language</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MivaScript</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MML-AXE10</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Mmmm()</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Modula-2</a> / <a title="leachim6/hello-world">Modula 2</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Modula-3</a> / <a title="leachim6/hello-world">Modula 3</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MoHAA-Script</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Mongo</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MOO</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Moonscript</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Morsecode</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Mouse</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Move</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Mozart</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MPD</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MSDOS</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MSIL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MS Small Basic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Muf</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">μλ</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MuLisp</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Mumps</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Muriel</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Mushcode</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Myrddin</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">MySQL</a> / <a title="leachim6/hello-world">Mysql</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">MySQL FUNCTION</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Mythryl</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Natural</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Neko</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Nemerle</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">newLISP</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">NewtonScript</a> / <a title="leachim6/hello-world">Newtonscript</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Nice</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Nim</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Nit</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Node</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Node.js</a> / <a title="leachim6/hello-world">Nodejs</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">NodePL</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Novice</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">NSIS</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Nu</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">NXC</a> / <a title="leachim6/hello-world">Nxc</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Oberon</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Oberon 2</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Oberon.oberon</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Oberon.std</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Obix</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Obj</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Objc</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Objective-C</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Objective J</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Objectstar</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">OCaml</a> / <a title="leachim6/hello-world">Ocaml</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Occam</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Octave</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Omgrofl</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Omnimark</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Ooc</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Ook</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">OOLANG</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Opa</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Openlaszlo</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">OpenLisp</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Openscad</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">OpenVMS</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">OPL.dialog</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">OPL.simple</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Oraclesql</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Orc</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Owl</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Oz</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Paintfuck</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Parenthetic</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Parser</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Pascal</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Pascal (Windows)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Pawn</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Pb</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PBASIC</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Pbwin</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PDF</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PEARL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Pebble</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PeopleCode</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Perl</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Perl 6</a> / <a title="leachim6/hello-world">Perl6</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Perseus</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Pharo</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Philosophy Script</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">PHP</a> / <a title="leachim6/hello-world">Php</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PHP+GD</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Picat</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Piet</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Pig</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Pikachu</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Pike</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PILOT</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Pit</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Pizza</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PL1</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Plain Text</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Plankalkül</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Please Porige Hot</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PL-SQL</a> / <a title="knightking100/hello-worlds">PL/SQL</a> / <a title="leachim6/hello-world">Plsql</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Pluvo</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Pocket Calculator</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Polynomial</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Pony</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">POP-11</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Portugol</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PostgreSQL</a> / <a title="leachim6/hello-world">Postgresql</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Postscript</a> / <a title="knightking100/hello-worlds">PostScript</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Postscript Page</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Posxml</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Potigol</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Potion</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">POV-Ray</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Powerbasic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Powerflex</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PowerScript</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Powershell</a> / <a title="knightking100/hello-worlds">PowerShell</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PPL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PQN-PROC</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PRAAT</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ProC</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Processing</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">ProDOS</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Profan</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Prograph</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Progress</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Prolog</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Punyforth</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Purebasic</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PureBasic (Console)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PureBasic (Messagebox)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">PureBasic (Window)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Purescript</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Pyret</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Pyth</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Python</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Python 2</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Python 3</a> / <a title="leachim6/hello-world">Python3</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Q</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Qalb</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Qbasic</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">QCL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">qore</a> / <a title="leachim6/hello-world">Qore</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Qu</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">QuakeC</a> / <a title="leachim6/hello-world">Quakec</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Quartz Composer</a> / <a title="leachim6/hello-world">Quartzcomposer</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Qugord</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">QuickBASIC</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Quipu</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Quorum</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Qwerty</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">R</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Racket</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Radixal</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Rail</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Rapira</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ratfor</a> / <a title="leachim6/hello-world">Ratfor</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Rational Rose</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">React</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">REALbasic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">RealText</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Reason</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">REBOL</a> / <a title="leachim6/hello-world">Rebol</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Rebol-view</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Recurse</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">RED</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Redcode</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Refal</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">REFAL-2</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Regular Expression</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Restructuredtext</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Rexx</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Rexx (simple)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Rexx (window)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Rey</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">rhine</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Richtea</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Ring</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Roco</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Roy</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">RPG IV v3-4</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">RPG IV v5</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">RPG IV v7.1</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">RPL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">RSL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Ruby</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Rust</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Sacred</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SAKO</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SAL</a> / <a title="leachim6/hello-world">Sal</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">S Algol</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SApp</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">SAS</a> / <a title="leachim6/hello-world">Sas</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Sather</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Sawzall</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Scala</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Scheme</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Schwift</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Scilab</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Scratch</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">SCSS</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">sed</a> / <a title="leachim6/hello-world">Sed</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Seed7</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Self</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Semicolon</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Sendstuff</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SenseTalk</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Set</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Setl2</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Set lang</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Shakespeare</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Shell</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Shen</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Sidef</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Sil</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SilverBasic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Simpl+</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SIMPLE</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Simula</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SinclairBasic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">SkookumScript</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Slashes</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Smali</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Smalltalk</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Smalltalk MT</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Smalltalk (simple)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Smalltalk (window)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SMIL</a> / <a title="leachim6/hello-world">Smil</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">SmileBASIC</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SML</a> / <a title="leachim6/hello-world">Sml</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Snobol</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Snowman</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Soupscript</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Sparql</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Spin</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Spiral</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SPL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">S-Plus</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Spoon</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Spry</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SPSS</a> / <a title="leachim6/hello-world">Spss</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">SQL</a> / <a title="leachim6/hello-world">Sql</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SQL (Advantage)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SQL (DB2)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SQL (Oracle)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">sqlplus</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SQR</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Squeak</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Squirrel</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SSI</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Standard Ml</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Stanza</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Stata</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ST-Guide</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Streem</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Stuck</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Stuck 0Byte</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Subleq</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Sucro</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">suicide</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SuperCollider</a> / <a title="leachim6/hello-world">Supercollider</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">SVG</a> / <a title="leachim6/hello-world">Svg</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Swift</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Symsyn</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">System RPL</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Systemtap</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">szl</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">T</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">T9</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">TACL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">TAL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Tao Presentations</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Tapebagel</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Tcl</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Tcsh</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">TECO</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Telephone</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">TeX</a> / <a title="leachim6/hello-world">Tex</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Texinfo</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Thp</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Thue</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">TI-59</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">TI-8x</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">TI BASIC</a> / <a title="leachim6/hello-world">Tibasic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">TI Extended BASIC</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">TinyFugue</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Tk</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">TorqueScript</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Toy</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Trans</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Transact-SQL</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">TRANSCRIPT</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Tri</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">troff</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Trollscript</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">TrumpScript</a> / <a title="leachim6/hello-world">Trumpscript</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">TSO CLIST</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">T-SQL</a> / <a title="leachim6/hello-world">Tsql</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Ttcn3</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Turing</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Turing Machine</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">TypeScript</a> / <a title="leachim6/hello-world">Typescript</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Ubercode</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Ubiquity</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Umajin</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">UniComal</a> / <a title="leachim6/hello-world">Unicomal</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Unix Shell</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">unlambda</a> / <a title="knightking100/hello-worlds
+leachim6/hello-world">Unlambda</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">UnrealScript</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Ursala</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">V</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">V--</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Vala</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">var'aq</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Vatical</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">VAX-11 Macro</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">VAX Macro</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">VBA (Excel)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">VBA (Word)</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Vbnet</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">VBScript</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">Velato</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Velocity</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Verbose</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Verbosefuck</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Verilog</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Verve</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Vexi</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">VHDL</a> / <a title="leachim6/hello-world">Vhdl</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Vi</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Vim script</a> / <a title="knightking100/hello-worlds">Vim Script</a> / <a title="leachim6/hello-world">Vimscript</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Virgil</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Visual Basic</a> / <a title="leachim6/hello-world">Visualbasic</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Visual Basic 6</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Visual Basic .NET</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Visualbasicscript</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Visual FoxPro</a> / <a title="knightking100/hello-worlds">Visual FoxPro</a> / <a title="leachim6/hello-world">Visualfoxpro</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Visual Prolog</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">VisualWorks Smalltalk</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Vms</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">VMS-DCL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Vowels</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">Vowels (2017)</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">VRML</a> / <a title="leachim6/hello-world">Vrml</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">VSL</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Vue</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">VVVV</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">WARP</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Wheat</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Whenever</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Whirl</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds
+leachim6/hello-world">Whitespace</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">wml</a> / <a title="leachim6/hello-world">Wml</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Wolfram</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Wolframlanguage</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds
+leachim6/hello-world">Wren</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">WSH</a> / <a title="leachim6/hello-world">Wsh</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">X++</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Xbase</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+leachim6/hello-world">Xbase++</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">xblite</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">X D</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">XHTML</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">XL</a> / <a title="leachim6/hello-world">Xl</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">XLISP</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">XLogo</a> / <a title="leachim6/hello-world">Xlogo</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Xml</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">XPL0</a> / <a title="leachim6/hello-world">Xpl0</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">XQuery</a> / <a title="leachim6/hello-world">Xquery</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">XRF</a> / <a title="leachim6/hello-world">Xrf</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">XSL-FO</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io
+knightking100/hello-worlds">XSLT</a> / <a title="leachim6/hello-world">Xslt</a></th><td class="got-language">✔</td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Xul</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Y</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Yacas</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Yaml</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Yolang</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">YoptaScript</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="knightking100/hello-worlds">Yorick</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="not-language"></td></tr>
+<tr><th><a title="leachim6/hello-world">Zbd</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Zepto</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Zetaplex</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">Zig</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="not-language"></td></tr>
+<tr><th><a title="helloworldcollection/helloworldcollection.github.io">ZIM</a> / <a title="leachim6/hello-world">Zim</a></th><td class="got-language">✔</td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Zimbu</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="knightking100/hello-worlds">ZOMBIE</a> / <a title="leachim6/hello-world">Zombie</a></th><td class="not-language"></td><td class="got-language">✔</td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Zonnon</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+<tr><th><a title="leachim6/hello-world">Zsh</a></th><td class="not-language"></td><td class="not-language"></td><td class="got-language">✔</td></tr>
+</tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="hero-foot">
+        </div>
+
+    </section>
+</html>
