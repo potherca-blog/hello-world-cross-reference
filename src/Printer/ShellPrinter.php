@@ -16,7 +16,14 @@ class ShellPrinter extends AbstractPrinter
 $length = 40;
         array_walk($languages, function (Language $language) use (&$output, $length) {
             $names = $language->getNames();
-            $output .= vsprintf('%-'.$length.'s => %s %s', [array_shift($names), implode(', ', $language->getProviders()), PHP_EOL]);
+            $output .= vsprintf(
+                '%-'.$length.'s => %s %s',
+                [
+                    array_shift($names),
+                    implode(', ', $language->getProviders()),
+                    PHP_EOL
+                ]
+            );
         });
 
         return $output;
