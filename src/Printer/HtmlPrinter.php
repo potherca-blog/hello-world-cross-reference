@@ -94,9 +94,9 @@ $html = <<<HTML
   <head>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" integrity="sha256-HEtF7HLJZSC3Le1HcsWbz1hDYFPZCqDhZa9QsCgVUdw=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://pother.ca/CssBase/css/created-by-potherca.css" integrity="sha384-ym76993Fm3XsoIrV759tLiuGRkmdFDc5PmfKo/3h5/xpoAt5S6NbvItSoWTvikLJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" integrity="sha256-rTpdO0HXBCNpreAHcu6tB2Ppg515Vo+5GtYSsnNLz+8=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pother.ca/CssBase/css/created-by-potherca.css" integrity="sha384-QvHJeoOWi9oJvXuho5ijxiwon85kRvlYTNAeOUu3GzAs8tRSgPkqlS/N/VsipOgU" crossorigin="anonymous">
 
     <style>
         section {
