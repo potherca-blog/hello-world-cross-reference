@@ -17,5 +17,8 @@
         "psr-4": {
             "Potherca\\CrossReference\\HelloWorld\\": "src/"
         }
+    },
+    "scripts": {
+        "start": "php -S 0.0.0.0:8080 -t web index.php"
     }
 }
