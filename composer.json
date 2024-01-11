@@ -6,7 +6,8 @@
     "authors": [
         {
             "name": "Ben Peachey",
-            "email": "potherca@hotmail.com"
+            "email": "github@pother.ca",
+            "homepage": "https://pother.ca/",
         }
     ],
     "require": {
