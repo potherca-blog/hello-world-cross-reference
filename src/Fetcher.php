@@ -41,7 +41,7 @@ class Fetcher
         $languages = [];
 
         $client = new Client(new CachedClient(array('cache_dir' => $cachDirectory)));
-        $client->authenticate(getenv('GITHUB_TOKEN'), null, \Github\Client::AUTH_URL_TOKEN);
+        $client->authenticate(getenv('GITHUB_TOKEN'), null, \Github\Client::AUTH_HTTP_TOKEN);
 
         array_walk($providers, function ($provider) use (&$languages, $client) {
             if (class_exists($provider) === false) {

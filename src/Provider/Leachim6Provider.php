@@ -13,7 +13,7 @@ class Leachim6Provider extends AbstractFetcher
     {
         $client = $this->getClient();
 
-        $file = $client->api('repo')->contents()->show('leachim6', 'hello-world', 'README.md');
+        $file = $client->api('repo')->contents()->show('leachim6', 'hello-world', 'readme.md');
 
         $content = html_entity_decode(base64_decode($file['content']));
 

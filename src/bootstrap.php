@@ -10,7 +10,7 @@ require $projectPath.'/vendor/autoload.php';
 
 /* Load `.env` */
 if (is_readable($projectPath . '/.env')) {
-  $dotenv = new \Dotenv\Dotenv($projectPath, '.env');
+  $dotenv = \Dotenv\Dotenv::createImmutable($projectPath);
   $dotenv->load();
   unset($dotenv);
 }
